@@ -1,0 +1,54 @@
+insert into Categoria (nome) values ('Bebida');
+insert into Categoria (nome) values ('Carne');
+insert into Categoria (nome) values ('Bolacha');
+insert into Categoria (nome) values ('Farinha');
+insert into Categoria (nome) values ('Café');
+insert into Categoria (nome) values ('Arroz');
+insert into Categoria (nome) values ('Feijão');
+insert into Categoria (nome) values ('Açúcar');
+insert into Categoria (nome) values ('Macarrão');
+insert into Categoria (nome) values ('Achocolatado');
+
+insert into Fabricante (nome) values ('The Coca Cola Company');
+insert into Fabricante (nome) values ('JBS');
+insert into Fabricante (nome) values ('Kellogg Company');
+insert into Fabricante (nome) values ('Coamo Cooperativa Agroindustria');
+insert into Fabricante (nome) values ('JDE Peets');
+insert into Fabricante (nome) values ('Rampinelli Alimentos');
+insert into Fabricante (nome) values ('Grupo Caldo Bom');
+insert into Fabricante (nome) values ('Grupo Camil');
+insert into Fabricante (nome) values ('Selmi');
+insert into Fabricante (nome) values ('Nestlé');
+
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Coca Cola 2 Litros', 20, 12.50, '2025-12-13', 1, 1);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Alcatra', 50, 50.89, '2025-10-01', 2, 2);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Bolacha Parati 500g', 99, 4.99, '2026-02-28', 3, 3);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Farinha Coamo 1kg', 79, 6.89, '2025-09-21', 4, 4);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Café Pilão 1kg', 34, 32.00, '2026-05-01', 5, 5);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Arroz Tio João 5kg', 70, 29.80, '2025-11-30', 6, 6);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Feijão Caldo Bom 1kg', 50, 9.99, '2025-11-01', 7, 7);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Açúcar União 5kg', 70, 26.89, '2026-10-26', 8, 8);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Macarrão Espaguete Parati 500g', 100, 2.99, '2025-09-10', 9, 9);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Nescau Lata 400g', 36, 9.90, '2026-09-07', 10, 10);
+
+INSERT INTO Cliente (nome, cpf) VALUES ('Ana Paula Mendes', '123.456.789-00');
+INSERT INTO Cliente (nome, cpf) VALUES ('Bruno Henrique Costa', '234.567.890-11');
+INSERT INTO Cliente (nome, cpf) VALUES ('Carla Regina Souza', '345.678.901-22');
+INSERT INTO Cliente (nome, cpf) VALUES ('Diego Martins Rocha', '456.789.012-33');
+INSERT INTO Cliente (nome, cpf) VALUES ('Elaine Cristina Lopes', '567.890.123-44');
+INSERT INTO Cliente (nome, cpf) VALUES ('Fernando Augusto Lima', '678.901.234-55');
+INSERT INTO Cliente (nome, cpf) VALUES ('Gabriela Nunes Teixeira', '789.012.345-66');
+INSERT INTO Cliente (nome, cpf) VALUES ('Henrique Dias Barbosa', '890.123.456-77');
+INSERT INTO Cliente (nome, cpf) VALUES ('Isabela Ramos Freitas', '901.234.567-88');
+INSERT INTO Cliente (nome, cpf) VALUES ('João Pedro Almeida', '012.345.678-99');
+
+INSERT INTO Funcionario (nome, cpf) VALUES ('Lucas Pereira Silva', '321.654.987-00');
+INSERT INTO Funcionario (nome, cpf) VALUES ('Mariana Costa Oliveira', '432.765.098-11');
+INSERT INTO Funcionario (nome, cpf) VALUES ('Ricardo Alves Lima', '543.876.109-22');
+INSERT INTO Funcionario (nome, cpf) VALUES ('Juliana Souza Martins', '654.987.210-33');
+INSERT INTO Funcionario (nome, cpf) VALUES ('Thiago Rocha Fernandes', '765.098.321-44');
+INSERT INTO Funcionario (nome, cpf) VALUES ('Patrícia Gomes Duarte', '876.109.432-55');
+INSERT INTO Funcionario (nome, cpf) VALUES ('André Luiz Carvalho', '987.210.543-66');
+INSERT INTO Funcionario (nome, cpf) VALUES ('Larissa Melo Andrade', '098.321.654-77');
+INSERT INTO Funcionario (nome, cpf) VALUES ('Vinícius Reis Barros', '109.432.765-88');
+INSERT INTO Funcionario (nome, cpf) VALUES ('Natália Freire Pinto', '210.543.876-99');
