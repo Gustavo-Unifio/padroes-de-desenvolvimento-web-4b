@@ -19,3 +19,4 @@ public class ItemVenda {
     @ManyToOne
     public Produto produto;
 }
+
