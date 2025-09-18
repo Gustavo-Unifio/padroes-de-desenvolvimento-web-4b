@@ -1,4 +1,4 @@
-package pi;
+package entidades;
 
 import java.time.LocalDate;
 
@@ -19,5 +19,5 @@ public class Pagamentos {
     public LocalDate dataPagamento;
     public String comprovanteUrl;
     @ManyToOne
-    public Contratacoes contratacoes; 
+    public Contratacoes contratacoes;
 }
