@@ -15,7 +15,7 @@ public class Pagamentos {
     public Integer id;
     public Double valor;
     public String metodoPagamento;
-    public String Status;
+    public String status;
     public LocalDate dataPagamento;
     public String comprovanteUrl;
     @ManyToOne
