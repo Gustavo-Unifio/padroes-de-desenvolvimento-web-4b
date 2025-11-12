@@ -31,6 +31,9 @@ insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabric
 insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Macarrão Espaguete Parati 500g', 100, 2.99, '2025-09-10', 9, 9);
 insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Nescau Lata 400g', 36, 9.90, '2026-09-07', 10, 10);
 
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Sim', 20, 2.50, '2025-12-13', 1, 1);
+
+
 INSERT INTO Cliente (nome, cpf) VALUES ('Ana Paula Mendes', '123.456.789-00');
 INSERT INTO Cliente (nome, cpf) VALUES ('Bruno Henrique Costa', '234.567.890-11');
 INSERT INTO Cliente (nome, cpf) VALUES ('Carla Regina Souza', '345.678.901-22');
@@ -74,3 +77,22 @@ INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (
 INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (180.40, 6, 8);
 INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (210.50, 3, 9);
 INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (160.60, 2, 10);
+
+
+
+
+
+INSERT INTO Servicos (nome, descricao, categoria)
+VALUES ('Faxina Residencial', 'Serviço de limpeza completa em residências, incluindo pisos, janelas e organização geral', 'Serviços Domésticos');
+
+INSERT INTO Servicos (nome, descricao, categoria)
+VALUES ('Cuidado com Idosos', 'Acompanhamento, auxílio em tarefas diárias e atenção especial à saúde e bem-estar de idosos', 'Cuidados Especiais');
+
+INSERT INTO Servicos (nome, descricao, categoria)
+VALUES ('Babá', 'Cuidado com crianças, incluindo alimentação, higiene e atividades recreativas', 'Cuidados Especiais');
+
+INSERT INTO Servicos (nome, descricao, categoria)
+VALUES ('Passadoria de Roupas', 'Serviço de passar roupas de forma organizada e profissional, com atenção a tecidos delicados', 'Serviços Domésticos');
+
+INSERT INTO Servicos (nome, descricao, categoria)
+VALUES ('Cozinha Caseira', 'Preparo de refeições simples e saudáveis para o dia a dia da família', 'Serviços Domésticos');
