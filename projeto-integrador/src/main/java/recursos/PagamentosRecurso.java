@@ -8,6 +8,7 @@ import jakarta.transaction.Transactional;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 
@@ -32,6 +33,24 @@ public class PagamentosRecurso {
 
         if (pagamentos != null) {
             pagamentos.delete();
+        }
+    }
+
+    @PUT
+    @Transactional
+    @Path("{id}")
+    public void editar (@PathParam("id") Integer id, Pagamentos pagamentos) {
+        Pagamentos pagamentosExistente = Pagamentos.findById(id);
+
+        if (pagamentosExistente != null) {
+            pagamentosExistente.valor = pagamentos.valor;
+            pagamentosExistente.metodoPagamento = pagamentos.metodoPagamento;
+            pagamentosExistente.status = pagamentos.status;
+            pagamentosExistente.dataPagamento = pagamentos.dataPagamento;
+            pagamentosExistente.comprovanteUrl = pagamentos.comprovanteUrl;
+            //pagamentosExistente.contratacoes = pagamentos.contratacoes;
+
+            pagamentosExistente.persist();
         }
     }
 }
